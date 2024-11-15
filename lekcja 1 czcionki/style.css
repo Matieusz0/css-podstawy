@@ -1,0 +1,22 @@
+.p1{
+    color:#271873; 
+    text-align: center; 
+    font-size: xx-large; 
+    font-family: fantasy;
+    font-weight: 10;
+    font-style: oblique;
+    line-height: 5;
+
+}
+
+p{
+    color:blue;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+    font-size: large;
+}
+
+.body{
+    background-color:rgb(224, 219, 143);
+}
