@@ -14,11 +14,11 @@
 .menu{
     border: 1px solid #000;
     height: 100px;
+    margin-top: 5px;
 }
 .container{
     height: 400px;
-   
-    
+    margin-top: 5px;
 }
 
 .lewy{
@@ -26,13 +26,15 @@
     width: 10%;
     height: 100%;
     border: 1px solid #000;
+    margin-right: 5px;
 
 }
 .main{
     float: left;
-    width: 79.5%;
+    width: 78.8%;
     height: 100%;
     border: 1px solid #000;
+    margin-right: 3px;
 
 }
 .prawy{
@@ -48,23 +50,47 @@
     display: inline-block;
     width: 100%;
     height: 150px;
+    margin-top: 5px;
+}
+
+.prawy:hover, .footer:hover, .main:hover, .lewy:hover, .menu:hover, .header:hover{
+    background-color:darkgrey;
+    transition: 2s;
+}
+.prawy, .footer, .main, .lewy, .menu, .header{
+    transition: 4s;
+}
+h2{
+    color:#000;
+    font-size: xx-large; 
+    font-family: fantasy;
+    font-weight: 10;
+    font-style: oblique;
+    text-align: center;
+    transition: 3s
+}
+h2:hover{
+    transition: 1s;
+    color:yellow
 }
     </style>
 </head>
 <body>
     <header>
-        <div class="header">header</div>
-        <div class="menu">menu</div>
+        <div class="header">
+            <h2>header</h2></div>
+        <div class="menu">
+            <h2>menu</h2></div>
     </header>
     <main>
         <div class="container">
-            <div class="lewy">lewa strona</div>
-            <div class="main">main content</div>
-            <div class="prawy">prawa strona</div>
+            <div class="lewy"><h2>lewa strona</h2></div>
+            <div class="main"><h2>main content</h2></div>
+            <div class="prawy"><h2>prawa strona</h2></div>
         </div>
     </main>
     <footer>
-        <div class="footer">stopka</div>
+        <div class="footer"><h2>stopka</h2></div>
     </footer>
 </body>
 </html>
