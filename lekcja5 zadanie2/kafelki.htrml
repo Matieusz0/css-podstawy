@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* kafelki */
+.kafelki {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+}
+
+.gap {
+    background: none;
+}
+
+.niebieski {
+    background-color: blue;
+    border: 2px solid black;
+}
+
+.zielony {
+    background-color: green;
+    border: 2px solid black;
+}
+
+.czerwony {
+    background-color: red;
+    border: 2px solid black;
+}
+
+.zolty {
+    background-color: yellow;
+    border: 2px solid black;
+}
+
+.rozowy {
+    background-color: pink;
+    border: 2px solid black;
+}
+/* ------------------------------------------------------------ */
+/* kwadrat */
+
+.purple {
+    margin-top: 100px;
+    width: 500px;
+    height: 500px;
+    background-color: purple;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+.green {
+    width: 400px;
+    height: 400px;
+    background-color: green;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+.yellow {
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+.blue {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+.red {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+span {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 12px;
+}
+/* ------------------------------------------------------------ */
+/* zmiana koloru po najechaniu myszki */
+/* nie wiedzialem dla ktorych to zrobic to zrobilem dla wszystkich */
+.purple:hover, .green:hover, .yellow:hover, .blue:hover, .red:hover{
+    background-color:tomato;
+}
+.niebieski:hover, .zolty:hover, .czerwony:hover, .zielony:hover, .rozowy:hover{
+    background-color: tomato;
+}
+
+    </style>
+</head>
+<body>
+    <div class="kafelki">
+        <div class="niebieski">1</div>
+        <div class="gap"></div>
+        <div class="zolty">4</div>
+
+        <div class="gap"></div>
+        <div class="czerwony">3</div>
+        <div class="gap"></div>
+
+        <div class="zielony">2</div>
+        <div class="gap"></div>
+        <div class="rozowy">5</div>
+    </div>
+
+    <div class="purple">
+        <span>purple</span>
+        <div class="green">
+            <span>green</span>
+            <div class="yellow">
+                <span>yellow</span>
+                <div class="blue">
+                    <span>blue</span>
+                    <div class="red">
+                        <span>red</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
